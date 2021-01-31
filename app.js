@@ -1,6 +1,6 @@
-/*var number = prompt('enter yourfirst number');
-var number_2 = prompt('enter your second number');
-var sign =prompt('enter your sign only + / * -');
+var number_3 = prompt('Enter your FIRST number for calculate');
+var number_2 = prompt('Enter your SECEND number for calculate');
+var sign =prompt('Enter your sign only + / * - we using validation here ^_^');
 
 
 while(sign!=='+' && sign!=='*' && sign!=='/'&& sign!=='-'){
@@ -18,27 +18,37 @@ else if(sign=='-'){
     sub();
 }
 function div(n,n1){
-    var div=number / number_2;
-    document.write('<h1>' +"your div =" +div + '</h1>');
+    var div=number_3 / number_2;
+ alert('your division ='+div);
 }
 function sub(n,n1){
-    var sub = parseInt (number) -parseInt( number_2) ;
-    document.write('<h1>' +"your subtract =" +sub + '</h1>');
+    var sub = parseInt (number_3) -parseInt( number_2) ;
+  alert('your subtract ='+sub);
 }
 
 
 function sum(n,n1){
-    var sum=parseInt(number) + parseInt(number_2);
-    document.write('<h1>' +"your sum =" +sum + '</h1>');
+    var sum=parseInt(number_3) + parseInt(number_2);
+    alert('your sum ='+sum);
 }
 function multi(n,n1){
-    var multi=number * number_2;
-    document.write('<h1>' +"your multi=" +multi + '</h1>');
+    var multi=number_3 * number_2;
+  alert('your multi ='+multi);
 }
-var userInputs = prompt('how many operation ? choose number');
-var image='<img src="calcu.jpeg">'; 
-for(var i = 0; i < userInputs; i++){
-     
-        console.log(image);
-       document.write(image);
-    }*/
+
+    var iteration=prompt('how many number would like to Enter for the average?');
+    var number=0;
+var sum=0;
+
+
+
+    for(var i=0;i<iteration;i++){
+     number=prompt('enter you number');
+     sum=(parseInt(sum)+parseInt(number));
+
+    }
+    function avg(){
+var avg=sum/iteration;
+alert('your average=  '+avg+' '+  ' your sum ='+sum);
+    }
+    avg();
